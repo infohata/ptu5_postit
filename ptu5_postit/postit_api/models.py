@@ -22,3 +22,6 @@ class Post(models.Model):
             user=self.user,
             created_at=self.created_at,
         )
+
+    class Meta:
+        ordering = ('-created_at',)
