@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 
 reqUrl = "http://127.0.0.1:8000/posts/"
 
@@ -12,4 +11,4 @@ payload = ""
 
 response = requests.request("GET", reqUrl, data=payload,  headers=headersList)
 
-pprint(response.text)
+print(response.text)
